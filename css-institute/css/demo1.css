@@ -1,0 +1,39 @@
+button {
+    background: none;
+    border: 1px solid #999;
+    border-radius: 6px;
+    box-shadow: 1px 1px#ddd;
+    outline: none;
+    cursor: pointer;
+}
+.box {
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    display: inline-block;
+    padding: 2px 2px;
+    position: relative;
+    /* 设置动画 */
+    transition: color .5s ease-in-out;
+}
+.box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    padding: 1px 0;
+    background-color: #00f;
+    /* 设置动画 */
+    transition: width .5s ease-in-out;    
+}
+
+.active {
+    color: #00f;
+}
+.active:after {
+    width: 100%;
+}

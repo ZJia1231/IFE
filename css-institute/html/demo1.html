@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo1</title>
+    <link rel="stylesheet" href="../css/demo1.css">
+</head>
+<body>
+    <div class="box">
+        测试文本
+    </div>
+    <br>
+    <br>
+    <button>切换样式</button>
+<script>
+    var box = document.querySelector('.box');
+    var btn = document.querySelector('button');
+    btn.addEventListener('click',function () {
+        /* 动态修改ClassName */
+        box.className == 'box' ? box.className = 'box active' : box.className ='box';
+    })
+</script>
+</body>
+</html>
