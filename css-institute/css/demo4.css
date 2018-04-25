@@ -1,0 +1,25 @@
+div {
+    width: 250px;
+    height: 350px;
+    font-size: 0;
+    transition: transform 0.6s linear;
+    position: relative;
+}
+img {
+    position: absolute;
+    left: 0;
+    top: 0;   
+}
+img:first-child {
+    z-index: 1;
+}
+img:last-child {
+    z-index: 0;
+    transition: z-index 0s 0.3s;    
+}
+div:hover {
+    transform: rotateY(180deg);
+}
+div:hover img:last-child{
+    z-index: 2;
+}
