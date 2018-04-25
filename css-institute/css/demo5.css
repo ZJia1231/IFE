@@ -18,7 +18,7 @@ html,body {
     margin: -100px 0 0 -100px;
     transform-origin: 100px 100px -100px;
     transform-style: preserve-3d;
-    animation: move 8s infinite linear;    
+    animation: move 8s infinite linear paused;    
 }
 .cover {
     position: absolute;
@@ -71,4 +71,7 @@ html,body {
     to {
         transform: rotateY(360deg);
     }
+}
+.cube:hover {
+    animation-play-state: running;
 }
