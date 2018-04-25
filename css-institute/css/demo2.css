@@ -1,0 +1,47 @@
+.box {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ebebeb;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    background: #f7f6f6;
+    margin: 30px;
+    transition: transform 1s 1s;
+}
+.box1 {
+    transform: skewX(30deg);
+    -ms-transform:skewX(30deg); 	/* IE 9 */
+    -moz-transform:skewX(30deg); 	/* Firefox */
+    -webkit-transform:skewX(30deg); /* Safari 和 Chrome */
+    -o-transform:skewX(30deg); 	/* Opera */
+}
+.box2 {
+    transform: scaleX(0.5);
+    -ms-transform:scaleX(0.5); 	/* IE 9 */
+    -moz-transform:scaleX(0.5); 	/* Firefox */
+    -webkit-transform:scaleX(0.5); /* Safari 和 Chrome */
+    -o-transform:scaleX(0.5); 	/* Opera */
+}
+.box3 {
+    transform: rotate(45deg);
+    -ms-transform:rotate(45deg); 	/* IE 9 */
+    -moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */
+}
+.box4 {
+    transform: translate(10px,20px);
+    -ms-transform:translate(10px,20px); 	/* IE 9 */
+    -moz-transform:translate(10px,20px); 	/* Firefox */
+    -webkit-transform:translate(10px,20px); /* Safari 和 Chrome */
+    -o-transform:translate(10px,20px); 	/* Opera */
+}
+.box5 {
+    transform: skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px);
+    -ms-transform:skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px); 	/* IE 9 */
+    -moz-transform:skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px); 	/* Firefox */
+    -webkit-transform:skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px); /* Safari 和 Chrome */
+    -o-transform:skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px); 	/* Opera */
+}
