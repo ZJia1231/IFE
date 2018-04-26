@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo6</title>
+    <link rel="stylesheet" href="../css/demo6.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="pic-list">
+            <li class="pic"><img src="../img/2.jpg"></li>
+            <li class="pic"><img src="../img/2.jpg"></li>
+            <li class="pic"><img src="../img/2.jpg"></li>
+            <li class="pic"><img src="../img/2.jpg"></li>
+            <li class="pic"><img src="../img/2.jpg"></li>
+        </ul>
+        <ul class="btn-list">
+            <li class="btn"><img src="../img/2.jpg"></li>
+            <li class="btn"><img src="../img/2.jpg"></li>
+            <li class="btn"><img src="../img/2.jpg"></li>
+            <li class="btn"><img src="../img/2.jpg"></li>
+            <li class="btn"><img src="../img/2.jpg"></li>
+        </ul>
+    </div>
+
+<script>
+    let picArr = document.querySelectorAll('.pic');
+    let btnArr = document.querySelectorAll('.btn');
+    let animationArr = ['first','second','third','fourth','fifth'];
+    let zIndex = 1;
+    btnArr.forEach(function (item,index) {
+        item.addEventListener('click',function () {
+            picArr[index].style.zIndex = ++zIndex; //让当前图片处于最顶层
+            picArr[index].style.animationName = animationArr[index];
+            for (let i = 0,len = picArr.length; i < len; i++) {
+                if (i!=index) {
+                    picArr[i].style.animationName = ''; //把其他的pic的动画名称设为空
+                }                
+            }
+        })
+    })
+</script>
+</body>
+</html>
