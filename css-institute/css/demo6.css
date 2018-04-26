@@ -96,7 +96,7 @@ img {
     }
 }
 .pic:nth-child(4) {
-    animation: none 1s ease-in;
+    animation: none 1s ease-out;
 }
 @keyframes fourth {
     from {
