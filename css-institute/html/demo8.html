@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/bodymovin/4.13.0/bodymovin_light.js"></script>
+    <title>demo8</title>
+    <style>
+        #animation {
+            width: 60%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="animation"></div>
+    <script>
+        bodymovin.loadAnimation({
+            path:'../js/data.json',
+            autoplay:true,
+            renderer:'svg',
+            container:document.getElementById('animation')
+        });
+    </script>
+</body>
+</html>
